@@ -1,6 +1,0 @@
-ISSUES:
-SPII_1 -> SPI 5 interaction
-
-Setup:
-ETH: IP 193.168.1.120 port 5000
-UART: UART 7 (RX - PE7, TX - PE8) 
