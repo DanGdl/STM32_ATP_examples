@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER_RIGHT" prefHeight="450.0" prefWidth="700.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rtg.arm.atp.RtgArmController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TextField fx:id="input_ip" promptText="Device ip and port. Example 192.168.1.50:5000" />
+   <TextField fx:id="input_test_id" promptText="TestID (5 digits max)" />
+   <TextField fx:id="input_message" promptText="Message (255 symbols max)" />
+   <TextField fx:id="input_iterations" promptText="Amount of iterations (255 max)" />
+   <AnchorPane fx:id="container_radios" prefHeight="29.0" prefWidth="350.0">
+      <children>
+         <RadioButton fx:id="radio_uart" layoutX="22.0" layoutY="3.0" mnemonicParsing="false" selected="true" text="UART">
+            <toggleGroup>
+               <ToggleGroup fx:id="protocols" />
+            </toggleGroup>
+         </RadioButton>
+         <RadioButton fx:id="radio_i2c" layoutX="310.0" layoutY="6.0" mnemonicParsing="false" text="I2C" toggleGroup="$protocols" />
+         <RadioButton fx:id="radio_spi" layoutX="608.0" layoutY="6.0" mnemonicParsing="false" text="SPI" toggleGroup="$protocols" />
+      </children>
+   </AnchorPane>
+   <Label fx:id="lbl_status" layoutX="548.0" layoutY="19.0" prefHeight="18.0" prefWidth="657.0" />
+   <AnchorPane prefHeight="55.0" prefWidth="360.0">
+      <children>
+         <Button fx:id="btn_send" alignment="CENTER" layoutX="557.0" layoutY="-1.0" onAction="#onSendClick" prefHeight="25.0" prefWidth="51.0" text="Send" />
+         <Button fx:id="btn_clear" alignment="CENTER" layoutX="608.0" layoutY="-1.0" onAction="#onClearClick" prefHeight="25.0" prefWidth="51.0" text="Clear" />
+         <Label fx:id="progress_message" layoutX="488.0" layoutY="4.0" opacity="0.0" text="LOADING..." />
+      </children>
+   </AnchorPane>
+   <TextArea fx:id="output" editable="false" prefHeight="345.0" prefWidth="360.0" />
+</VBox>
