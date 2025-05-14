@@ -1,4 +1,5 @@
 .metadata
+*.launch
 
 ProjectATP_GUI/.idea
 ProjectATP_GUI/target
@@ -15,4 +16,8 @@ ProjectDMA/.cproject
 ProjectDMA/.project
 ProjectDMA/Debug
 
-*.launch
+Timers/.settings
+Timers/.mxproject
+Timers/.cproject
+Timers/.project
+Timers/Debug
