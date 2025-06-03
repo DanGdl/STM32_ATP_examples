@@ -4,20 +4,11 @@
 ProjectATP_GUI/.idea
 ProjectATP_GUI/target
 
-ProjectATP/.mxproject
-ProjectATP/.cproject
 ProjectATP/.settings
-ProjectATP/.project
 ProjectATP/Debug
 
 ProjectDMA/.settings
-ProjectDMA/.mxproject
-ProjectDMA/.cproject
-ProjectDMA/.project
 ProjectDMA/Debug
 
 Timers/.settings
-Timers/.mxproject
-Timers/.cproject
-Timers/.project
 Timers/Debug
